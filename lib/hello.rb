@@ -1,7 +1,11 @@
 names = [Tim, Tom, Jim]
 
 def hello_t(names)
- puts 'Hello, #{names}
+  i = 0 
+  while i < names.length
+    yield names[i]
+    i = i + 1
+  end
 end
 
 # call your method here!
